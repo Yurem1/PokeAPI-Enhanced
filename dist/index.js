@@ -1,4 +1,4 @@
-import { URL } from './misc.json';
+import URL from './misc.json';
 /**
  * Represents a Pokedex.
  */
@@ -16,7 +16,7 @@ export class Pokedex {
      * @returns A Promise that resolves to a Pokemon object, or void if an error occurs.
      */
     async getPokemon() {
-        const url = URL.pokemon;
+        const url = URL.ENDPOINTS.pokemon;
         try {
             // Fetch the pokemon from our name property
             const req = await fetch(`${url}${this.name}`, {
