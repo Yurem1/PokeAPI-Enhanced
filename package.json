@@ -1,6 +1,6 @@
 {
   "name": "pokeapi-enhanced",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "type": "module",
   "description": "A better, easier, and CommonJS compatible library that allows you to fetch, display, and control how you fetch pokemons.",
   "main": "dist/index.js",
