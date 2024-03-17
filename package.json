@@ -4,14 +4,11 @@
   "description": "A better, easier, and CommonJS compatible library that allows you to fetch, display, and control how you fetch pokemons.",
   "main": "dist/index.js",
   "module": "src/index.ts",
+  "types": "src/types/index.d.ts",
   "exports": {
     "import": "./src/index.ts",
     "require": "./dist/index.js"
   },
-  "files": [
-    "dist",
-    "src"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
