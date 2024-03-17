@@ -1,5 +1,6 @@
 import { NamedAPIResource } from '../global_types/global'
 import { PokemonSprites } from '../global_types/sprites';
+
 import PokemonAbility from './types/abilities';
 import PokemonCries from './types/cries';
 import VersionGameIndex from './types/game_indices';
