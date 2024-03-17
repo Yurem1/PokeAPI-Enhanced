@@ -1,5 +1,5 @@
-import Pokemon from '../types/pokemon/pokemon';
-import { urls } from '../utils.json';
+import { Pokemon } from '../types/pokemon/pokemon';
+import { urls } from '../misc.json';
 
 /**
  * Represents a Pokedex.
@@ -19,10 +19,11 @@ export class Pokedex {
    * Retrieves information about a Pokemon from the API.
    * @returns A Promise that resolves to a Pokemon object, or void if an error occurs.
    */
-  async getPokemon(): Promise<Pokemon | void> {
+  async getPokemon(): Promise<Pokemon | null> {
     const URL = urls.pokemon;
 
     try {
+      // Fetch the pokemon from our name property
       const req = await fetch(`${URL}${this.name}`, {
         method: 'GET',
         headers: {
@@ -30,10 +31,11 @@ export class Pokedex {
         }
       });
 
+      // Finally return our Pokémon object.
       return await req.json() as Pokemon;
 
     } catch(error) {
-      console.log(error);
+      return null;
     }
   }
 }
