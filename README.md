@@ -5,7 +5,7 @@
 
 # pokeapi-enhanced
 
-A better suitable [PokeAPI](https://pokeapi.co/) wrapper for Node projects using CommonJS, also including support for Typescript
+A better suitable [PokeAPI](https://pokeapi.co/) wrapper for Node projects using ESM.
 
 ### Installation Guide:
 ```npm install pokeapi-enhanced```
