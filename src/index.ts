@@ -1,5 +1,5 @@
 import { URL } from './misc.json';
-import { Pokemon } from './types/pokemon';
+import { Pokemon } from './interfaces/pokemon';
 
 /**
  * Represents a Pokedex.
