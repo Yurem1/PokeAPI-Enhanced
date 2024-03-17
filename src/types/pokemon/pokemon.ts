@@ -8,7 +8,10 @@ import PokemonMove from './types/moves';
 import PokemonTypePast, { PokemonType } from './types/past_types';
 import PokemonStat from './types/stats';
 
-export default interface Pokemon {
+/**
+ * Represents a Pokemon object.
+ */
+export interface Pokemon {
   /**
    * The identifier of this resource.
    */
@@ -88,7 +91,7 @@ export default interface Pokemon {
    * A visual representation of the various sprites can be found
    * at https://github.com/PokeAPI/sprites#sprites
    */
-  sprites: PokemonSprites[];
+  sprites: PokemonSprites;
 
   /**
    * A set of cries used to depict this Pokemon in the game.
