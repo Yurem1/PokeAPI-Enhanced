@@ -3,13 +3,15 @@
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+# pokeapi-enhanced
+
 A better suitable [PokeAPI](https://pokeapi.co/) wrapper for Node projects using CommonJS, also including support for Typescript
 
 ### Installation Guide:
 ```npm install pokeapi-enhanced```
 ### Usage: 
 ```ts
-import Pokedex from 'pokeapi-ehanced';
+import Pokedex from 'pokeapi-enhanced';
 
 const  dex  =  new  Pokedex('pikachu');
 const  entry  =  await  dex.getPokemon();
