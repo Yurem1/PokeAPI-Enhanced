@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Pokedex = void 0;
-const misc_json_1 = require("./misc.json");
+import { URL } from './misc.json';
 /**
  * Represents a Pokedex.
  */
-class Pokedex {
+export class Pokedex {
     name;
     /**
      * Creates a new instance of the Pokedex class.
@@ -19,7 +16,7 @@ class Pokedex {
      * @returns A Promise that resolves to a Pokemon object, or void if an error occurs.
      */
     async getPokemon() {
-        const url = misc_json_1.URL.pokemon;
+        const url = URL.pokemon;
         try {
             // Fetch the pokemon from our name property
             const req = await fetch(`${url}${this.name}`, {
@@ -36,4 +33,3 @@ class Pokedex {
         }
     }
 }
-exports.Pokedex = Pokedex;
