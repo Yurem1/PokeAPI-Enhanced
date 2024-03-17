@@ -20,5 +20,5 @@ const  heldItem  =  entry?.held_items?.[0].item;
 const  pastType  =  entry?.past_types?.[0]?.types?.[0]?.type?.name;
 ```
 
-> Always make sure that you check the [API](https://pokeapi.co/) docs for reference.
+> Always make sure that you check the [API](https://pokeapi.co/) docs for reference.   
 > Some pokemons might not have some properties and will display as null or undefined.
