@@ -13,22 +13,23 @@ export class Pokedex {
     }
     /**
      * Retrieves information about a Pokemon from the API.
-     * @returns A Promise that resolves to a Pokemon object, or void if an error occurs.
+     * @returns A Promise that resolves to a Pokemon object, or null if an error occurs.
      */
     async getPokemon() {
         const url = URL.ENDPOINTS.pokemon;
         try {
-            // Fetch the pokemon from our name property
+            // Fetch the pokemon data from the API using the specified name
             const req = await fetch(`${url}${this.name}`, {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json'
                 }
             });
-            // Finally return our Pokémon object.
+            // Parse the response as JSON and return it as a Pokemon object
             return await req.json();
         }
         catch (error) {
+            // If an error occurs during the API request, return null
             return null;
         }
     }

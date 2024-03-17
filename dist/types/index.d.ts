@@ -1,4 +1,4 @@
-import { Pokemon } from './interfaces/pokemon';
+import { Pokemon } from './interfaces/Pokemon/pokemon';
 /**
  * Represents a Pokedex.
  */
@@ -11,7 +11,7 @@ export declare class Pokedex {
     constructor(_name: string);
     /**
      * Retrieves information about a Pokemon from the API.
-     * @returns A Promise that resolves to a Pokemon object, or void if an error occurs.
+     * @returns A Promise that resolves to a Pokemon object, or null if an error occurs.
      */
     getPokemon(): Promise<Pokemon | null>;
 }

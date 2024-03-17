@@ -1,13 +1,13 @@
-import { NamedAPIResource } from './api_resource'
-import { PokemonSprites } from './Pokemon/Pokemon/sprites';
+import { NamedAPIResource } from '../api_resource'
+import { PokemonSprites } from './Pokemon/sprites';
 
-import PokemonAbility from './Pokemon/Pokemon/abilities';
-import PokemonCries from './Pokemon/Pokemon/cries';
-import VersionGameIndex from './Pokemon/Pokemon/game_indices';
-import PokemonHeldItems from './Pokemon/Pokemon/held_items';
-import PokemonMove from './Pokemon/Pokemon/moves';
-import PokemonTypePast, { PokemonType } from './Pokemon/Pokemon/past_types';
-import PokemonStat from './Pokemon/Pokemon/stats';
+import PokemonAbility from './Pokemon/abilities';
+import PokemonCries from './Pokemon/cries';
+import VersionGameIndex from './Pokemon/game_indices';
+import PokemonHeldItems from './Pokemon/held_items';
+import PokemonMove from './Pokemon/moves';
+import PokemonTypePast, { PokemonType } from './Pokemon/past_types';
+import PokemonStat from './Pokemon/stats';
 
 /**
  * Represents a Pokemon object.
