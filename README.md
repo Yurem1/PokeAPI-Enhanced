@@ -25,7 +25,7 @@ const  pastType  =  entry?.past_types?.[0]?.types?.[0]?.type?.name;
 
 ### Contributing: 
 Please read our [code of conduct](https://github.com/Yurem1/PokeAPI-Enhanced/blob/main/CODE_OF_CONDUCT.md) and [contributing guidelines](https://github.com/Yurem1/PokeAPI-Enhanced/blob/main/CONTRIBUTING.md) before attempting to contribute.   
-All in all, open an issue [here](https://github.com/Yurem1/PokeAPI-Enhanced/issues)
+To open issues, please go [here](https://github.com/Yurem1/PokeAPI-Enhanced/issues)
 ### Important:
 Only fetching from https://pokeapi.co/api/v2/pokemon endpoint is accessible, in the future, I will keep adding more and more endpoint access implementations.
 
