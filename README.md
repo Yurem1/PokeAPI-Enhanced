@@ -1,4 +1,3 @@
-
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -6,7 +5,7 @@
 
 # pokeapi-enhanced
 
-A better suitable [PokeAPI](https://pokeapi.co/) wrapper for Node projects using ESM.
+A better, suitable, & concise [PokeAPI](https://pokeapi.co/) wrapper for Node projects using ES modules.
 
 ### Installation Guide:
 ```npm install pokeapi-enhanced```
@@ -24,5 +23,9 @@ const  pastType  =  entry?.past_types?.[0]?.types?.[0]?.type?.name;
 > Always make sure that you check the [API](https://pokeapi.co/) docs for reference.   
 > Some pokemons might not have some properties and will display as null or undefined.
 
+### Contributing: 
+Please read our [code of conduct](https://github.com/Yurem1/PokeAPI-Enhanced/blob/main/CODE_OF_CONDUCT.md) and [contributing guidelines](https://github.com/Yurem1/PokeAPI-Enhanced/blob/main/CONTRIBUTING.md) before attempting to contribute.   
+All in all, open an issue [here](https://github.com/Yurem1/PokeAPI-Enhanced/issues)
 ### Important:
-Only fetching from https://pokeapi.co/api/v2/pokemon endpoint is accessible, in the future, I will keep adding more and more endpoint accesses.
+Only fetching from https://pokeapi.co/api/v2/pokemon endpoint is accessible, in the future, I will keep adding more and more endpoint access implementations.
+
