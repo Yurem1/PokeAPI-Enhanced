@@ -4,8 +4,8 @@
   "type": "module",
   "description": "A better, easier, and CommonJS compatible library that allows you to fetch, display, and control how you fetch pokemons.",
   "main": "src/index.js",
-  "types": "dist/index.d.ts",
-  "typings": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
