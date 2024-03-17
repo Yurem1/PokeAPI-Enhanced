@@ -12,18 +12,18 @@ export class Pokedex {
    * @param _name - The name of the Pokedex.
    */
   public constructor(_name: string) {
-    this.name = _name
+    this.name = _name;
   }
 
   /**
    * Retrieves information about a Pokemon from the API.
-   * @returns A Promise that resolves to a Pokemon object, or void if an error occurs.
+   * @returns A Promise that resolves to a Pokemon object, or null if an error occurs.
    */
   async getPokemon(): Promise<Pokemon | null> {
     const url = URL.ENDPOINTS.pokemon;
 
     try {
-      // Fetch the pokemon from our name property
+      // Fetch the pokemon data from the API using the specified name
       const req = await fetch(`${url}${this.name}`, {
         method: 'GET',
         headers: {
@@ -31,10 +31,11 @@ export class Pokedex {
         }
       });
 
-      // Finally return our Pokémon object.
+      // Parse the response as JSON and return it as a Pokemon object
       return await req.json() as Pokemon;
 
     } catch(error) {
+      // If an error occurs during the API request, return null
       return null;
     }
   }

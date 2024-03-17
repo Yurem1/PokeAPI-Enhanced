@@ -1,4 +1,4 @@
-import { NamedAPIResource } from "./api_resource";
+import { NamedAPIResource } from "../../api_resource";
 
 /**
  * Represents the game version index for a specific Pokémon.

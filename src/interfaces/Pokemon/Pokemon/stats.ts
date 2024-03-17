@@ -1,7 +1,7 @@
 import {
 
 NamedAPIResource
-} from './api_resource';
+} from '../../api_resource';
 
 /**
  * Represents the stats for a Pokémon.

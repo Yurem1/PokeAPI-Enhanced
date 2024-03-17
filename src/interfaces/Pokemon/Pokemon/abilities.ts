@@ -1,4 +1,4 @@
-import { NamedAPIResource } from "./api_resource";
+import { NamedAPIResource } from "../../api_resource";
 
 /**
  * Represents a Pokemon ability.

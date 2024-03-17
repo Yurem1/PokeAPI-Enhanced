@@ -1,4 +1,4 @@
-import { NamedAPIResource } from "./api_resource";
+import { NamedAPIResource } from "../../api_resource";
 
 /**
  * Represents the details of a move learned by a Pokémon in a specific version group.
