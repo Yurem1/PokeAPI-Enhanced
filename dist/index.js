@@ -2,6 +2,10 @@
  * Index export.
  */
 export { Pokedex } from './utility/index';
+/**
+ * Exports from the Pokémon group
+ */
+export { Pokemon } from './utility/Pokemon/pokemon';
 export * from './interfaces/Pokemon/Pokemon/abilities';
 export * from './interfaces/Pokemon/Pokemon/cries';
 export * from './interfaces/Pokemon/Pokemon/game_indices';
