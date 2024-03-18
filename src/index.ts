@@ -47,3 +47,5 @@ export class Pokedex {
     }
   }
 }
+
+export { Pokemon } from './interfaces/Pokemon/pokemon';
