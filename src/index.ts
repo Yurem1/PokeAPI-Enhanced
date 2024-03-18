@@ -8,11 +8,17 @@ export class Pokedex {
   private name: string;
 
   /**
-   * Creates a new instance of the Pokedex class.
-   * @param _name - The name of the Pokedex.
+   * Creates a new instance of the Pokédex class.
+   * @param _name - The name of the Pokéxdex.
    */
   public constructor(_name: string) {
-    this.name = _name;
+    // Replace hyphens whitespace & dots (.) with hyphens (-).
+    this.name = (function () {
+      return _name
+        .toLowerCase()
+        .replace(/\.\s{1}|\.|\s/, '-')
+        .replace(/\./, '')
+    })();
   }
 
   /**
@@ -20,6 +26,7 @@ export class Pokedex {
    * @returns A Promise that resolves to a Pokemon object, or null if an error occurs.
    */
   async getPokemon(): Promise<Pokemon | null> {
+    // The URL endpoint https://pokeapi.co/api/v2/pokemon/
     const url = URL.ENDPOINTS.pokemon;
 
     try {
@@ -34,7 +41,7 @@ export class Pokedex {
       // Parse the response as JSON and return it as a Pokemon object
       return await req.json() as Pokemon;
 
-    } catch(error) {
+    } catch (error) {
       // If an error occurs during the API request, return null
       return null;
     }
