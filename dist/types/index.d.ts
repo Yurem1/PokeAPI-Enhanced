@@ -5,8 +5,8 @@ import { Pokemon } from './interfaces/Pokemon/pokemon';
 export declare class Pokedex {
     private name;
     /**
-     * Creates a new instance of the Pokedex class.
-     * @param _name - The name of the Pokedex.
+     * Creates a new instance of the Pokédex class.
+     * @param _name - The name of the Pokéxdex.
      */
     constructor(_name: string);
     /**

@@ -5,9 +5,9 @@ export default interface PokemonCries {
     /**
      * The latest cry of the Pokemon.
      */
-    latest: string;
+    latest: string | null;
     /**
      * The legacy cry of the Pokemon.
      */
-    legacy: string;
+    legacy: string | null;
 }

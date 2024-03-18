@@ -10,5 +10,5 @@ export default interface VersionGameIndex {
     /**
      * The version of the game.
      */
-    version: NamedAPIResource;
+    version: NamedAPIResource | null;
 }

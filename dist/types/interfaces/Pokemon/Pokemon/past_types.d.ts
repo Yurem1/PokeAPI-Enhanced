@@ -6,11 +6,11 @@ export interface PokemonType {
     /**
      * The slot number of the type.
      */
-    slot: number;
+    slot: number | null;
     /**
      * The type of the Pokémon.
      */
-    type: NamedAPIResource;
+    type: NamedAPIResource | null;
 }
 /**
  * Represents the past types of this Pokémon.
@@ -19,9 +19,9 @@ export default interface PokemonTypePast {
     /**
      * The generation of the past types.
      */
-    generation: NamedAPIResource;
+    generation: NamedAPIResource | null;
     /**
      * The array of past types for the Pokémon.
      */
-    types: PokemonType[];
+    types: (PokemonType | null)[];
 }

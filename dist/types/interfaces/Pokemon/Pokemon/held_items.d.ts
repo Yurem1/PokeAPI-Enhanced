@@ -6,16 +6,16 @@ export interface PokemonHeldItemVersion {
     /**
      * The rarity of the held item version.
      */
-    rarity: number;
+    rarity: number | null;
     /**
      * The version of the held item.
      */
-    version: NamedAPIResource;
+    version: NamedAPIResource | null;
 }
 /**
  * Represents the held items of a Pokemon.
  */
 export default interface PokemonHeldItems {
-    item: NamedAPIResource;
-    version_details: PokemonHeldItemVersion[];
+    item: NamedAPIResource | null;
+    version_details: PokemonHeldItemVersion[] | null;
 }

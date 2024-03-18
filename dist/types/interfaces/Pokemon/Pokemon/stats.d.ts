@@ -6,13 +6,13 @@ export default interface PokemonStat {
     /**
      * The stat of the Pokémon.
      */
-    stat: NamedAPIResource;
+    stat: NamedAPIResource | null;
     /**
      * The effort value of the Pokémon.
      */
-    effort: number;
+    effort: number | null;
     /**
      * The base stat of the Pokémon.
      */
-    base_stat: number;
+    base_stat: number | null;
 }

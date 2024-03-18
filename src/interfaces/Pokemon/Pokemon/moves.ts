@@ -7,17 +7,17 @@ export interface PokemonMoveVersion {
   /**
    * The method by which the Pokémon learns the move.
    */
-  move_learn_method: NamedAPIResource;
+  move_learn_method: NamedAPIResource | null;
   
   /**
    * The version group in which the move is learned.
    */
-  version_group: NamedAPIResource;
+  version_group: NamedAPIResource | null;
   
   /**
    * The level at which the Pokémon learns the move.
    */
-  level_learned_at: number;
+  level_learned_at: number | null;
 }
 
 /**
@@ -27,10 +27,10 @@ export default interface PokemonMove {
   /**
    * The move itself.
    */
-  move: NamedAPIResource;
+  move: NamedAPIResource | null;
   
   /**
    * The details of the move in different version groups.
    */
-  version_group_details: PokemonMoveVersion[];
+  version_group_details: PokemonMoveVersion[] | null;
 }
