@@ -1,51 +1,23 @@
-import URL from './misc.json';
-import { Pokemon } from './interfaces/Pokemon/pokemon';
+/**
+ * Index export.
+ */
+export { Pokedex } from './utility/index';
 
 /**
- * Represents a Pokedex.
+ * Export every entity from the Pokemon type
  */
-export class Pokedex {
-  private name: string;
-
-  /**
-   * Creates a new instance of the Pokédex class.
-   * @param _name - The name of the Pokéxdex.
-   */
-  public constructor(_name: string) {
-    // Replace hyphens whitespace & dots (.) with hyphens (-).
-    this.name = (function () {
-      return _name
-        .toLowerCase()
-        .replace(/\.\s{1}|\.|\s/, '-')
-        .replace(/\./, '')
-    })();
-  }
-
-  /**
-   * Retrieves information about a Pokemon from the API.
-   * @returns A Promise that resolves to a Pokemon object, or null if an error occurs.
-   */
-  async getPokemon(): Promise<Pokemon | null> {
-    // The URL endpoint https://pokeapi.co/api/v2/pokemon/
-    const url = URL.ENDPOINTS.pokemon;
-
-    try {
-      // Fetch the pokemon data from the API using the specified name
-      const req = await fetch(`${url}${this.name}`, {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      // Parse the response as JSON and return it as a Pokemon object
-      return await req.json() as Pokemon;
-
-    } catch (error) {
-      // If an error occurs during the API request, return null
-      return null;
-    }
-  }
-}
-
 export { Pokemon } from './interfaces/Pokemon/pokemon';
+
+export * from './interfaces/Pokemon/Pokemon/abilities';
+export * from './interfaces/Pokemon/Pokemon/cries';
+export * from './interfaces/Pokemon/Pokemon/game_indices';
+export * from './interfaces/Pokemon/Pokemon/held_items';
+export * from './interfaces/Pokemon/Pokemon/moves';
+export * from './interfaces/Pokemon/Pokemon/past_types';
+export * from './interfaces/Pokemon/Pokemon/sprites';
+export * from './interfaces/Pokemon/Pokemon/stats';
+
+/**
+ * Export NamedAPIResource (found in almost all types)
+ */
+export { NamedAPIResource } from './interfaces/api_resource';
