@@ -1,18 +1,20 @@
-import { Pokemon } from './interfaces/Pokemon/pokemon';
 /**
- * Represents a Pokedex.
+ * Index export.
  */
-export declare class Pokedex {
-    private name;
-    /**
-     * Creates a new instance of the Pokédex class.
-     * @param _name - The name of the Pokéxdex.
-     */
-    constructor(_name: string);
-    /**
-     * Retrieves information about a Pokemon from the API.
-     * @returns A Promise that resolves to a Pokemon object, or null if an error occurs.
-     */
-    getPokemon(): Promise<Pokemon | null>;
-}
+export { Pokedex } from './utility/index';
+/**
+ * Export every entity from the Pokemon type
+ */
 export { Pokemon } from './interfaces/Pokemon/pokemon';
+export * from './interfaces/Pokemon/Pokemon/abilities';
+export * from './interfaces/Pokemon/Pokemon/cries';
+export * from './interfaces/Pokemon/Pokemon/game_indices';
+export * from './interfaces/Pokemon/Pokemon/held_items';
+export * from './interfaces/Pokemon/Pokemon/moves';
+export * from './interfaces/Pokemon/Pokemon/past_types';
+export * from './interfaces/Pokemon/Pokemon/sprites';
+export * from './interfaces/Pokemon/Pokemon/stats';
+/**
+ * Export NamedAPIResource (found in almost all types)
+ */
+export { NamedAPIResource } from './interfaces/api_resource';

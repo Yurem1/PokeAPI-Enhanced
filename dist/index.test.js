@@ -1,4 +1,4 @@
-import { Pokedex } from './index';
+import { Pokedex } from './utility/index';
 // Creates a Pokedex object
 const dex = new Pokedex('ho-oh');
 // If the pokemon entry exists, this test should run normally,
