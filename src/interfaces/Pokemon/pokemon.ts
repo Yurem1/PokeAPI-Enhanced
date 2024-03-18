@@ -10,9 +10,10 @@ import PokemonTypePast, { PokemonType } from './Pokemon/past_types';
 import PokemonStat from './Pokemon/stats';
 
 /**
- * Represents a Pokemon object.
+ * The Pokémon entity that encapsulates all the properties regarding 
+ * a Pokémon.
  */
-export interface Pokemon {
+export interface IPokemon {
   /**
    * The identifier of this resource.
    */
