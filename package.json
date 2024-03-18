@@ -1,6 +1,6 @@
 {
   "name": "pokeapi-enhanced",
-  "version": "1.3.0",
+  "version": "1.2.6",
   "type": "module",
   "description": "A better, easier, and enhanced library that allows you to fetch, display, and control how you fetch pokemons.",
   "main": "dist/index.js",
