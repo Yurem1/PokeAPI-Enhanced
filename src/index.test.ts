@@ -1,4 +1,4 @@
-import { Pokedex } from './index';
+import { Pokedex } from './utility/index';
 import { Pokemon } from './interfaces/Pokemon/pokemon';
 
 // Creates a Pokedex object
