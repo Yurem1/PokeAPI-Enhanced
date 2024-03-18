@@ -15,3 +15,4 @@ export declare class Pokedex {
      */
     getPokemon(): Promise<Pokemon | null>;
 }
+export { Pokemon } from './interfaces/Pokemon/pokemon';
