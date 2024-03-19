@@ -1,10 +1,9 @@
 import { Pokedex } from './utility/index';
-import { IPokemon } from './interfaces/Pokemon/pokemon';
-import { Pokemon } from './utility/Pokemon/pokemon';
 
 // If the pokemon entry exists, this test should run normally,
 // Otherwise it will return null & the test will fail.
 test('Fetching a pokemon', async () => {
-  const dex = await Pokedex.getPokemon('mr. mime.');
+  const dex = await Pokedex.getNature('adamant');
+  console.log(dex?.getHatesFlavor?.name)
   expect(dex).toBeTruthy();
 });
