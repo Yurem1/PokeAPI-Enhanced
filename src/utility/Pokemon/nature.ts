@@ -7,8 +7,8 @@ import { NamedAPIResource } from '../../interfaces/api_resource';
 export class Nature {
   private readonly id: number | null;
   private readonly name: string | null;
-  private readonly decrease_stat: NamedAPIResource | null;
-  private readonly increased_state: NamedAPIResource | null;
+  private readonly decreased_stat: NamedAPIResource | null;
+  private readonly increased_stat: NamedAPIResource | null;
   private readonly hates_flavor: NamedAPIResource | null;
   private readonly likes_flavor: NamedAPIResource | null;
   private readonly pokeathlon_stat_changes: NatureStateChange[] | null;
@@ -18,8 +18,8 @@ export class Nature {
   public constructor(_nature: INature) {
     this.id = _nature.id;
     this.name = _nature.name;
-    this.decrease_stat = _nature.decrease_stat;
-    this.increased_state = _nature.increased_state;
+    this.decreased_stat = _nature.decreased_stat;
+    this.increased_stat = _nature.increased_stat;
     this.hates_flavor = _nature.hates_flavor;
     this.likes_flavor = _nature.likes_flavor;
     this.pokeathlon_stat_changes = _nature.pokeathlon_stat_changes;
@@ -45,14 +45,14 @@ export class Nature {
    * Getter for the stat that is decreased by this nature
    */
   public get getDecreaseStat(): NamedAPIResource | null {
-    return this.decrease_stat;
+    return this.decreased_stat;
   }
 
   /**
    * Getter for the stat that is increased by this nature
    */
   public get getIncreasedStat(): NamedAPIResource | null {
-    return this.increased_state;
+    return this.increased_stat;
   }
 
   /**

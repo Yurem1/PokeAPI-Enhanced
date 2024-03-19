@@ -4,7 +4,7 @@ import { Name } from './Natures/name';
 import { NatureStateChange } from './Natures/pokeathlon_stat_changes';
 
 /**
- * @class
+ * @interface
  * A comprehensive representation of a Pokémon nature, containing various attributes and relationships.
  * 
  * @remarks
@@ -25,12 +25,12 @@ export interface INature {
   /**
    * The stat decreased by 10% in Pokémon with this nature.
    */
-  decrease_stat: NamedAPIResource;
+  decreased_stat: NamedAPIResource;
   
   /**
    * The stat increased by 10% in Pokémon with this nature.
    */
-  increased_state: NamedAPIResource;
+  increased_stat: NamedAPIResource;
 
   /**
    * The flavor hated by this Pokémon with this nature.
