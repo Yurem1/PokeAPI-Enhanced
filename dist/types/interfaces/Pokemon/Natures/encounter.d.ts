@@ -1,4 +1,7 @@
 import { NamedAPIResource } from '../../api_resource';
+/**
+ * Represents properties such as encounter odds, max level, wheather condition for encounter to happen, etc.
+ */
 export interface Encounters {
     /**
      * The lowest level the Pokémon could be encountered at.

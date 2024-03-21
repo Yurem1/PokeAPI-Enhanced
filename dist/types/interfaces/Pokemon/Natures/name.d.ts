@@ -1,10 +1,14 @@
+import { NamedAPIResource } from '../../api_resource';
+/**
+ * The name for this Pokémon.
+ */
 export interface Name {
     /**
-     * The game version this encounter happens in.
+     * The localized name for an API resource in a specific language.
      */
     name: string;
     /**
-     * The total percentage of all encounter potential.
+     * The language this name is in.
      */
-    max_change: number;
+    language: NamedAPIResource;
 }
