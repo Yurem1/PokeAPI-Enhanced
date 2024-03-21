@@ -21,6 +21,9 @@ export * from './interfaces/Pokemon/Pokemon/past_types';
 export * from './interfaces/Pokemon/Pokemon/sprites';
 export * from './interfaces/Pokemon/Pokemon/stats';
 export * from './interfaces/Pokemon/Natures/encounter';
+export * from './interfaces/Pokemon/Natures/move_battle_style_preferences';
+export * from './interfaces/Pokemon/Natures/name';
+export * from './interfaces/Pokemon/Natures/pokeathlon_stat_changes';
 /**
  * Export NamedAPIResource (found in almost all types)
  */
