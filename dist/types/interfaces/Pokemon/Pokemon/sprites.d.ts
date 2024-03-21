@@ -89,19 +89,19 @@ export interface OtherSprites {
     /**
      * The sprites from Dreamworld.
      */
-    dream_world: DreamWorld;
+    dream_world: DreamWorld | null;
     /**
      * The sprites from Pokémon home.
      */
-    home: Home;
+    home: Home | null;
     /**
      * The official artwork sprites.
      */
-    'official-artwork': OfficialArtwork;
+    'official-artwork': OfficialArtwork | null;
     /**
      * The sprites from Pokémon Showdown.
      */
-    showdown: Showdown;
+    showdown: Showdown | null;
 }
 /**
  * Represents the sprites of a Pokemon.
@@ -142,5 +142,5 @@ export interface PokemonSprites {
     /**
      * The other sprites for this pokemon.
      */
-    other: OtherSprites;
+    other: OtherSprites | null;
 }
