@@ -19,6 +19,11 @@ export class Pokedex {
   private readonly NATURE_URL = URL.ENDPOINTS.nature;
 
   /**
+   * THE URL endpoint https://pokeapi.co/api/v2/ability/
+   */
+  private readonly ABILITIES_URL = URL.ENDPOINTS.abilities;
+
+  /**
    * Creates a new instance of the Pokédex class.
    * @param _name - The name of the Pokédex entry.
    */
@@ -83,4 +88,6 @@ export class Pokedex {
       return null;
     }
   }
+
+  
 }
