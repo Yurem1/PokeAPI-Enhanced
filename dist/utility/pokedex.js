@@ -15,6 +15,10 @@ export class Pokedex {
      */
     NATURE_URL = URL.ENDPOINTS.nature;
     /**
+     * THE URL endpoint https://pokeapi.co/api/v2/ability/
+     */
+    ABILITIES_URL = URL.ENDPOINTS.abilities;
+    /**
      * Creates a new instance of the Pokédex class.
      * @param _name - The name of the Pokédex entry.
      */
