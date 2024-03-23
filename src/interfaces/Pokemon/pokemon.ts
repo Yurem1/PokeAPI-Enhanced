@@ -10,8 +10,12 @@ import PokemonTypePast, { PokemonType } from './Pokemon/past_types';
 import PokemonStat from './Pokemon/stats';
 
 /**
- * The Pokémon entity that encapsulates all the properties regarding 
- * a Pokémon.
+ * @interface
+ * A comprehensive representation of a Pokémon, containing various attributes and relationships.
+ * 
+ * @remarks
+ * This interface represents the structure of a Pokémon in the PokeAPI.
+ * It includes properties such as the Pokémon's ID, name, base experience, height, weight, abilities, moves, types, and more.
  */
 export interface IPokemon {
   /**
