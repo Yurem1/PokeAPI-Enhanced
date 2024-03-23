@@ -14,6 +14,10 @@ export declare class Pokedex {
      */
     private readonly NATURE_URL;
     /**
+     * THE URL endpoint https://pokeapi.co/api/v2/ability/
+     */
+    private readonly ABILITIES_URL;
+    /**
      * Creates a new instance of the Pokédex class.
      * @param _name - The name of the Pokédex entry.
      */
