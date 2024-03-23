@@ -1,5 +1,8 @@
 import { NamedAPIResource } from '../../api_resource';
 
+/**
+ * The verbose effect for this pokémon.
+ */
 export interface VerboseEffect {
   /**
    * The localized effect text for an API resource in a specific language.

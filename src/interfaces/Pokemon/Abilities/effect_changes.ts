@@ -2,7 +2,7 @@ import { NamedAPIResource } from '../../api_resource';
 import { Effect } from './effect';
 
 /**
- * T
+ * The ability effect change for this pokémon.
  */
 export interface AbilityEffectChange {
   /**

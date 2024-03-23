@@ -1,4 +1,7 @@
 import { NamedAPIResource } from '../../api_resource';
+/**
+ * The ability flavor text for this pokémon.
+ */
 export interface AbilityFlavorText {
     /**
      * The localized name for an API resource in a specific language.
