@@ -15,6 +15,8 @@ export class Abilities {
     names;
     effect_entries;
     effect_changes;
+    flavor_text_changes;
+    pokemon;
     constructor(_abilities) {
         this.id = _abilities.id;
         this.name = _abilities.name;
@@ -23,6 +25,8 @@ export class Abilities {
         this.names = _abilities.names;
         this.effect_entries = _abilities.effect_entries;
         this.effect_changes = _abilities.effect_changes;
+        this.flavor_text_changes = _abilities.flavor_text_entries;
+        this.pokemon = _abilities.pokemon;
     }
     /**
      * Gets the ID of this ability.
@@ -72,5 +76,19 @@ export class Abilities {
      */
     get getEffectChanges() {
         return this.effect_changes;
+    }
+    /**
+     * Gets the pokémon flavor text changes of this ability.
+     * @returns The flavor text changes, or null if not available.
+     */
+    get getFlavorTextChanges() {
+        return this.flavor_text_changes;
+    }
+    /**
+     * Gets the pokémons that use this ability.
+     * @returns The pokémons, or null if not available.
+     */
+    get getPokemons() {
+        return this.pokemon;
     }
 }

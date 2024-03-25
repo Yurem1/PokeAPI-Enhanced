@@ -1,5 +1,7 @@
 import { AbilityEffectChange } from '../../interfaces/Pokemon/Abilities/effect_changes';
 import { VerboseEffect } from '../../interfaces/Pokemon/Abilities/effect_entries';
+import { AbilityFlavorText } from '../../interfaces/Pokemon/Abilities/flavor_text_entries';
+import { AbilityPokemon } from '../../interfaces/Pokemon/Abilities/pokemon';
 import { Name } from '../../interfaces/Pokemon/Natures/name';
 import { IAbilities } from '../../interfaces/Pokemon/abilities';
 import { NamedAPIResource } from '../../interfaces/api_resource';
@@ -20,6 +22,8 @@ export declare class Abilities {
     private readonly names;
     private readonly effect_entries;
     private readonly effect_changes;
+    private readonly flavor_text_changes;
+    private readonly pokemon;
     constructor(_abilities: IAbilities);
     /**
      * Gets the ID of this ability.
@@ -56,4 +60,14 @@ export declare class Abilities {
      * @returns The effect changes of the ability, or null if not available.
      */
     get getEffectChanges(): AbilityEffectChange[] | null;
+    /**
+     * Gets the pokémon flavor text changes of this ability.
+     * @returns The flavor text changes, or null if not available.
+     */
+    get getFlavorTextChanges(): AbilityFlavorText[] | null;
+    /**
+     * Gets the pokémons that use this ability.
+     * @returns The pokémons, or null if not available.
+     */
+    get getPokemons(): AbilityPokemon[] | null;
 }

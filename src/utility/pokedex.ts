@@ -1,4 +1,6 @@
 import URL from '../misc.json';
+
+import { Abilities } from './Pokemon/abilities';
 import { Nature } from './Pokemon/nature';
 import { Pokemon } from './Pokemon/pokemon';
 
@@ -89,5 +91,29 @@ export class Pokedex {
     }
   }
 
-  
+  /**
+   * Retrieves information about an ability from the API.
+   * @returns A Promise that resolves to an **Abilities** object, or null if an error occurs.
+   */
+  static async getAbilities(_name: string): Promise<Abilities | null> {
+    // The pokedex entry.
+    const entry = new Pokedex(_name);
+
+    try {
+      // Fetch the pokemon data from the API using the specified name
+      const req = await fetch(`${entry.ABILITIES_URL}${entry.name}`, {
+        method: 'GET',
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      // Parse the response as JSON and return it as an Abilities object.
+      return new Abilities(await req.json());
+
+    } catch {
+      // If an error occurs during the API request, return null.
+      return null;
+    }
+  }
 }
