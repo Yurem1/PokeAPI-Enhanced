@@ -2,6 +2,6 @@
     "ENDPOINTS": {
         "pokemon": "https://pokeapi.co/api/v2/pokemon/",
         "nature": "https://pokeapi.co/api/v2/nature/",
-        "abilities": "GET https://pokeapi.co/api/v2/ability/"
+        "abilities": "https://pokeapi.co/api/v2/ability/"
     }
 }
