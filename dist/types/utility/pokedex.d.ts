@@ -1,3 +1,4 @@
+import { Abilities } from './Pokemon/abilities';
 import { Nature } from './Pokemon/nature';
 import { Pokemon } from './Pokemon/pokemon';
 /**
@@ -14,6 +15,10 @@ export declare class Pokedex {
      */
     private readonly NATURE_URL;
     /**
+     * THE URL endpoint https://pokeapi.co/api/v2/ability/
+     */
+    private readonly ABILITIES_URL;
+    /**
      * Creates a new instance of the Pokédex class.
      * @param _name - The name of the Pokédex entry.
      */
@@ -28,4 +33,9 @@ export declare class Pokedex {
      * @returns A Promise that resolves to a **Nature** object, or null if an error occurs.
      */
     static getNature(_name: string): Promise<Nature | null>;
+    /**
+     * Retrieves information about an ability from the API.
+     * @returns A Promise that resolves to an **Abilities** object, or null if an error occurs.
+     */
+    static getAbilities(_name: string): Promise<Abilities | null>;
 }

@@ -129,16 +129,21 @@ export class Pokemon {
   }
 
   /**
-   * Gets the forms of the Pokemon.
+   * Gets the forms of the Pokémon.
    * @returns The forms of the Pokemon, or null if not available.
    */
   public get getPokemonForms(): NamedAPIResource[] | null {
     return this.forms || null;
   }
 
+  /**
+   * Gets the pokémon game indices.
+   * @returns The pokémon game indices, or null if not avaliable
+   */
   public get getPokemonGameIndices(): VersionGameIndex[] | null {
     return this.game_indices || null;
   }
+
   /**
    * Gets the held items of the Pokemon.
    * @returns The held items of the Pokemon, or null if not available.

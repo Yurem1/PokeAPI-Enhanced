@@ -1,4 +1,7 @@
 import { NamedAPIResource } from '../../api_resource';
+/**
+ * Move Battle Style Preferences for this pokémon.
+ */
 export interface MoveBattleStylePreference {
     /**
      * Chance of using the move, in percent, if HP is under one half.
