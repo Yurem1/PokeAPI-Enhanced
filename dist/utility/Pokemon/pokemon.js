@@ -108,12 +108,16 @@ export class Pokemon {
         return this.abilities || null;
     }
     /**
-     * Gets the forms of the Pokemon.
+     * Gets the forms of the Pokémon.
      * @returns The forms of the Pokemon, or null if not available.
      */
     get getPokemonForms() {
         return this.forms || null;
     }
+    /**
+     * Gets the pokémon game indices.
+     * @returns The pokémon game indices, or null if not avaliable
+     */
     get getPokemonGameIndices() {
         return this.game_indices || null;
     }

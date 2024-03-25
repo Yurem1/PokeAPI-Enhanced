@@ -82,10 +82,14 @@ export declare class Pokemon {
      */
     get getPokemonAbilities(): PokemonAbility[] | null;
     /**
-     * Gets the forms of the Pokemon.
+     * Gets the forms of the Pokémon.
      * @returns The forms of the Pokemon, or null if not available.
      */
     get getPokemonForms(): NamedAPIResource[] | null;
+    /**
+     * Gets the pokémon game indices.
+     * @returns The pokémon game indices, or null if not avaliable
+     */
     get getPokemonGameIndices(): VersionGameIndex[] | null;
     /**
      * Gets the held items of the Pokemon.

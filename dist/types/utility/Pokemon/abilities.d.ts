@@ -22,7 +22,7 @@ export declare class Abilities {
     private readonly names;
     private readonly effect_entries;
     private readonly effect_changes;
-    private readonly flavor_text_changes;
+    private readonly flavor_text_entries;
     private readonly pokemon;
     constructor(_abilities: IAbilities);
     /**
@@ -64,7 +64,7 @@ export declare class Abilities {
      * Gets the pokémon flavor text changes of this ability.
      * @returns The flavor text changes, or null if not available.
      */
-    get getFlavorTextChanges(): AbilityFlavorText[] | null;
+    get getFlavorTextEntries(): AbilityFlavorText[] | null;
     /**
      * Gets the pokémons that use this ability.
      * @returns The pokémons, or null if not available.
